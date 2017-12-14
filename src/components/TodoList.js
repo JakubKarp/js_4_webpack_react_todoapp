@@ -5,10 +5,9 @@ class TodoList extends React.Component {
 	render() {
 		return (
 			<ul> 
-			{this.props.taski.map(cokolwiek => 			
-				<Todo text={cokolwiek.text} key={cokolwiek.id} remove={cokolwiek.remove}/>
+			{this.props.taski.map((cokolwiek) => 			
+				<Todo key={cokolwiek.id} task={cokolwiek} remove={this.props.remove}/>
 			)}
-			 
 			</ul>
 		)
 	}
