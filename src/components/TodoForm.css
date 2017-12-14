@@ -27,6 +27,7 @@
 	font-weight: 700;
 	font-family: 'Roboto', sans-serif;
 	font-family: 'Courgette', cursive;
+	border: 1px solid red;
 	border-radius: 15px;
 	
 }
@@ -34,3 +35,4 @@
 .TodoFormButton:hover {
 	background: white;
 }
+
