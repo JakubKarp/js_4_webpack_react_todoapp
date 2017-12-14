@@ -24,7 +24,6 @@ class App extends React.Component {
   		text,
   		id: uuid.v4()
   	}, ...this.state.tasky]
-    
     this.setState({
       tasky
     });
@@ -36,17 +35,22 @@ class App extends React.Component {
     const remainder = this.state.tasky.filter(tasky => tasky.id !== id);
     
     this.setState({
-      tasky: remainder
+      tasky: remainder,
+	  	 	
+		
     });
 
   }
 
+getTaskyNumber() {
+	return this.state.tasky.length;
+}	
 	
 	
 render() {
 	return (
 		<div>
-			<Title taskCounter={this.tasksNumber}/>
+			<Title taskCounter={this.getTaskyNumber()}/>
 			<div className={style.TodoApp}>
 				<TodoList taski={this.state.tasky} remove={this.removeTodo} />
 				<TodoForm addTasky={newTasky => this.addTodo(newTasky)}/>

@@ -4,9 +4,7 @@ import style from './Title.css';
 class Title extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			taskCounter: 0
-		}
+		
 	}
 	
 	

@@ -1,5 +1,7 @@
 .TodoForm {
-	margin-top: 30vh;
+	position: absolute;
+	left: 5vw;
+	top: 20vh;
 	width: 90vw;
 	height: 10vh;
 	font-family: 'Roboto', sans-serif;
@@ -28,7 +30,7 @@
 	font-family: 'Roboto', sans-serif;
 	font-family: 'Courgette', cursive;
 	border: 1px solid red;
-	border-radius: 15px;
+	border-radius: 5px;
 	
 }
 

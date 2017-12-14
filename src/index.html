@@ -11,3 +11,55 @@
 </body>
 </html>
 <!--npm start-->
+
+<!--
+różne metody dodawania elementu do listy - a w zasadzie ta sama metoda, tylko zapisana różnie
+
+addTodo(passedNewTask) {
+   let newTasky = {
+    text: passedNewTask.text,
+    id: uuid.v4()
+   }
+    const tasky = [newTasky, ...this.state.tasky]
+    this.setState({
+      tasky
+    });
+  }
+  
+  
+  
+  addTodo({text}) {
+   let newTasky = {
+    text: text,
+    id: uuid.v4()
+   }
+    const tasky = [newTasky, ...this.state.tasky]
+    this.setState({
+      tasky
+    });
+  }
+  
+  
+  addTodo({text}) {
+   let newTasky = {
+    text,
+    id: uuid.v4()
+   }
+    const tasky = [newTasky, ...this.state.tasky]
+    this.setState({
+      tasky
+    });
+  }
+  
+  
+  addTodo({text}) {
+    const tasky = [{
+    text,
+    id: uuid.v4()
+   }, ...this.state.tasky]
+    
+    this.setState({
+      tasky
+    });
+  }
+-->
