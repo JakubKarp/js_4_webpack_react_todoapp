@@ -1,0 +1,36 @@
+.TodoForm {
+	margin-top: 30vh;
+	width: 90vw;
+	height: 10vh;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Courgette', cursive;
+}
+
+.TodoFormInput {
+	padding: 10px;
+	width: 80%;
+	height: auto;
+	background: #cddeea;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Courgette', cursive;
+	color: red;
+	
+}
+
+.TodoFormButton {
+	margin-left: 8vh;
+	padding: 1.6vh;
+	width: 10vw;
+	background: #cddeea;
+	color: red;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Courgette', cursive;
+	border-radius: 15px;
+	
+}
+
+.TodoFormButton:hover {
+	background: white;
+}

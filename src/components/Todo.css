@@ -1,0 +1,18 @@
+
+
+.liButton {
+	background: #cddeea;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Courgette', cursive;
+	color: red;
+	float: right;
+	margin-right: 5vw;
+	margin-top: -0.6vh;
+	border-radius: 3px;
+	padding: 3px 10px 3px 10px;
+	
+}
+
+.liButton:hover {
+	background: white
+}

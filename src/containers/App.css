@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.TodoApp {
+    background-color: #575757;
+    color: #cddeea;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+	position: relative;
+	
+}
+
+ul {
+	background: #766262;
+	width: 90vw;
+	height: auto;
+	list-style-type: none;
+	padding: 0;	
+	margin-top: 20vh
+		
+}
+
+li {
+	border-bottom: 1px solid red;
+	padding-left: 20px;
+	display: block;
+	
+}
