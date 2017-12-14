@@ -4,17 +4,17 @@ import style from './Todo.css'
 
 class Todo extends React.Component {
 
-handleClick(ev) {
-	ev.preventDefault();
-	this.props.remove(this.props.id);
-    }
+	handleClick(ev, id) {
+		ev.preventDefault();
+		this.props.remove(id);
+  }
 	
 	render() {
+		console.log('what to render', this.props)
 		return (
-			<li  className={style.liTodo} >
-				<p>{this.props.text}
-				<button type="submit" className={style.liButton} onClick={ev => this.handleClick(ev)}>Zrobione</button>
-			
+			<li className={style.liTodo} >
+				<p>{this.props.task.text}
+					<button type="submit" className={style.liButton} onClick={ev => this.handleClick(ev, this.props.task.id)}>Zrobione</button>
 				</p>
 			</li>
 		)
