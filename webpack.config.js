@@ -28,7 +28,10 @@ if (env === 'production') {
 
 
 module.exports = {
-  entry: './src/index.js',
+  entry: [
+         'react-hot-loader/patch',
+         './src/index.js'
+    ],
   devtool: 'eval-source-map',
   output: {
     path: path.resolve(__dirname, 'build'),
